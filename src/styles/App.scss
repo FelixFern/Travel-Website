@@ -1,0 +1,109 @@
+
+// Font Setup
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// Variable
+$orange: #F8A300;
+$yellow: #F5B935;
+$blue: #63BCE5;
+
+* { 
+    margin: 0%;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+h1 { 
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.navbar {
+    width: 75vw;
+    margin-inline: auto;
+}
+
+.content {
+    width: 100vw;
+    margin: auto;
+    overflow: show;
+    
+    .landing {
+        width: 100vw;
+        overflow: hidden;
+        margin-inline: auto;
+    }
+
+    .landing-bg {
+        position: absolute;
+        z-index: -1;
+
+        .darken {
+            position: absolute;
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            opacity: .75;
+            filter: blur(20);
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+            filter: brightness(-0.05);
+        }
+    }
+
+    .landing-content {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        overflow: visible;
+        align-items: center;
+        margin-inline: auto;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .left {
+            flex: 1;
+            margin-left: 12.5vw;
+            h2 {
+                color: $yellow;
+            }
+            .orange-btn  {
+                h3 {
+                    transition: 0.2s;
+                    margin-top: 20px;
+                    width: fit-content;
+                    background-color: $orange;
+                    padding: 8px 25px;
+                    border-radius: 5px;   
+                    
+                    &:hover {
+                        transition: 0.2s;
+                        background-color: $yellow;
+                    }
+                    
+                }
+            }
+        }
+        
+        .right {
+            flex: 1.5;
+        }
+    }
+}

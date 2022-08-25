@@ -1,0 +1,62 @@
+// Variable
+$orange: #F8A300;
+$yellow: #F5B935;
+$blue: #63BCE5;
+
+.navbar-parent {
+    width: 75vw;
+    position: absolute;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    
+    .company {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-color: grey;
+        }
+        h3 {
+            span {
+                color: $orange;
+            }
+        }
+    }
+
+    .navigation {
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        
+        a {
+            text-decoration: none;  
+            transition: 0.2s;
+            
+            &:hover {
+                transition: 0.2s;
+                opacity: .8;
+            }
+        }
+        
+        .orange-btn {
+            transition: 0.2s;
+            background-color: $orange;
+            padding: 6px 20px;
+            border-radius: 5px;   
+            
+            &:hover{ 
+                opacity: 1;
+                transition: 0.2s;
+                background-color: $yellow;
+            }
+        }
+    
+    
+    }
+}
