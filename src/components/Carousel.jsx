@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { slideContext } from '../global/global-states'
 import './carousel.scss'
 
 const Carousel = ({items}) => {
 
-    const [ currentSlide, setCurrentSlide ] = useState(0)
+    const { currentSlide, setCurrentSlide } = useContext(slideContext)
     const [ currentOffset, setCurrentOffset ] = useState(0)
 
     const slideRight = () => {
@@ -26,6 +27,7 @@ const Carousel = ({items}) => {
         }
         
     }
+
     return (
         <div className='carousel-parent'>
             <div className="carousel-card-parent" style={{ transform: `translateX(${currentOffset}px)`}}>
@@ -35,6 +37,15 @@ const Carousel = ({items}) => {
                             <div key={i} className={ currentSlide == i ? "carousel-card": "carousel-card darken"}>
                                 <img src={val.source}></img>
                                 <h3>{val.title}</h3>
+                            </div>
+                        )
+                    })
+                }
+                {
+                    items.map((val, i) => {
+                        return (
+                            <div key={i} className="carousel-card darken">
+                                <div className='blank'></div>
                             </div>
                         )
                     })

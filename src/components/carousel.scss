@@ -19,6 +19,7 @@ $blue: #63BCE5;
             width: 250px;
             aspect-ratio: 5/8;
             transform: translate(1);
+            box-shadow: 10px 10px 19px -9px rgba(0,0,0,0.55);
             
             img {
                 z-index: -1;
@@ -29,11 +30,21 @@ $blue: #63BCE5;
                 object-fit: cover;
             }
             
+            .blank {
+                width: 250px;
+                aspect-ratio: 5/8;
+                border-radius: 15px;
+                background-color: darkgrey;
+                opacity: .8;
+            }
+
             h3 {
-                font-size: 1.25rem;
                 position: absolute;
                 bottom: 5%;
                 left: 10%;
+                font-size: 1.25rem;
+                text-shadow: 10px 10px 19px -9px rgba(0,0,0,0.55);
+                user-select: none;
             }
         }
         .darken {
@@ -91,6 +102,38 @@ $blue: #63BCE5;
             background-color: white;
             width: 100vw;
             height: 2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .carousel-parent {
+        position: absolute;
+        left: 12.5vw;
+        top: 120px;
+        overflow-x: hidden;
+
+        .carousel-card-parent {
+            transition: 0.5s;
+            position: relative;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            overflow: hidden;
+            column-gap: 20px;
+            .carousel-card {
+                aspect-ratio: 7/8;
+                img {
+                    aspect-ratio: 7/8;
+
+                }
+            }
+        }    
+        .slider {
+            .line {
+                display: none;
+            }
+            
         }
     }
 }
