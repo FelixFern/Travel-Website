@@ -34,7 +34,9 @@ const Carousel = ({items}) => {
                 {
                     items.map((val, i) => {
                         return (
-                            <div key={i} className={ currentSlide == i ? "carousel-card": "carousel-card darken"}>
+                            <div key={i} className={ currentSlide == i ? "carousel-card": "carousel-card darken"} onClick={() => {
+                                currentSlide != i ? slideRight() : console.log()
+                            }}>
                                 <img src={val.source}></img>
                                 <h3>{val.title}</h3>
                             </div>
@@ -44,7 +46,7 @@ const Carousel = ({items}) => {
                 {
                     items.map((val, i) => {
                         return (
-                            <div key={i} className="carousel-card darken">
+                            <div key={i} className="carousel-card darken" onClick={() => {slideRight()}}>
                                 <div className='blank'></div>
                             </div>
                         )
