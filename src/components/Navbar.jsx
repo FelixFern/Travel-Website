@@ -5,6 +5,9 @@ const Navbar = () => {
     return (
         <div className='navbar-parent'>
             <div className="company">
+                <div className="logo">
+                    <img src="assets/logo.png" alt="" />
+                </div>
                 <h3>
                     TRAVEL AND TAXI <br/>
                     <span>

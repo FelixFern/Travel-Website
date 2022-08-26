@@ -14,13 +14,14 @@ $blue: #63BCE5;
     
     .company {
         display: flex;
-        column-gap: 15px;
+        column-gap: 10px;
         align-items: center;
 
         .logo {
-            width: 40px;
-            height: 40px;
-            background-color: grey;
+            img {
+                width: 50px;
+                height: 50px;
+            }
         }
         h3 {
             span {
@@ -67,6 +68,10 @@ $blue: #63BCE5;
         .navigation {
             .link {
                 display: none;
+            }
+            .orange-btn {
+                padding: 6px 10px;
+                text-align: center;
             }
         }
     }
