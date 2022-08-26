@@ -28,6 +28,10 @@ function App() {
 			title: 'LOHAN TEMPLE',
 			source: './assets/lohan.jpg'
 		},
+		{
+			title: 'BLUE LAKE AND BINTAN DESSERT',
+			source: './assets/blue-lake.jpg'
+		}
 	]
 	const [ currentSlide, setCurrentSlide ] = useState(0)
 	const [ name, setName ] = useState('')
