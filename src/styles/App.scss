@@ -59,6 +59,7 @@ a {
             img {
                 width: 100vw;
                 height: 100vh;
+                object-fit: cover;
                 filter: brightness(-0.05);
             }
         }
@@ -284,6 +285,8 @@ a {
                     margin-top: 20px;
                     .contact {
                         width: 100%;
+                        flex-direction: column;
+                        row-gap: 10px;
                         justify-content: space-between;
                     }
                 }
