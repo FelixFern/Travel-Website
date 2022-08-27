@@ -34,7 +34,7 @@
         z-index: 100;
         img {
             margin: auto;
-            height: 80vh;
+            width: 60vw;
             border-radius: 10px;
         }
     }
@@ -51,13 +51,10 @@
 
 @media only screen and (max-width: 800px) {
     .modal-content { 
-        height: fit-content;
         z-index: 100;
         img {
+            width: 75vw;
             object-fit: cover;
-            margin: auto;
-            width: 70vw;
-            height: auto;
             border-radius: 10px;
         }
     }
