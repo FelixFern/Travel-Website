@@ -12,7 +12,7 @@ const Modal = () => {
                 <h1 onClick={() =>{setModal({'show': false})}}>X</h1>
             </div>
             <div className='modal-content'>
-                <img src={modal.source} alt="" />
+                <img src={modal.source} alt={modal.title}/>
                 <h2>{modal.title}</h2>
             </div>
         </div>

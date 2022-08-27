@@ -84,7 +84,7 @@ function App() {
 				<div className="landing">
 					<div className="landing-bg">
 						<div className="darken"></div>
-						<img src={carouselItems[currentSlide].source} alt="" />
+						<img src={carouselItems[currentSlide].source} alt={carouselItems[currentSlide].title} />
 					</div>
 					<div className="landing-content" data-aos='fade-up'>
 						<div className="left">
@@ -135,7 +135,7 @@ function App() {
 						</div>
 						<div className="booking-part">
 							<div data-aos='fade-up' className="car">
-								<img src="assets/car.png" alt="" />
+								<img src="assets/car.png" alt=""/>
 							</div>
 							<div className="booking-form">
 								<h2 data-aos='fade-right'>Booking</h2>

@@ -37,7 +37,7 @@ const Carousel = ({items}) => {
                             <div key={i} className={ currentSlide == i ? "carousel-card": "carousel-card darken"} onClick={() => {
                                 currentSlide != i ? slideRight() : console.log()
                             }}>
-                                <img src={val.source}></img>
+                                <img src={val.source} alt={val.title}></img>
                                 <h3>{val.title}</h3>
                             </div>
                         )
