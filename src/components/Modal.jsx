@@ -11,7 +11,7 @@ const Modal = () => {
             <div className="close-btn" >
                 <h1 onClick={() =>{setModal({'show': false})}}>X</h1>
             </div>
-            <div className='content'>
+            <div className='modal-content'>
                 <img src={modal.source} alt="" />
                 <h2>{modal.title}</h2>
             </div>

@@ -17,6 +17,10 @@ const Activities = () => {
             source: "assets/snorkeling.jpg"
         },
         {
+            title: "Snorkeling Tour", 
+            source: "assets/snorkeling-2.jpg"
+        },
+        {
             title: "Mangrove Tour", 
             source: "assets/hutan-m.jpg"
         },
@@ -63,9 +67,18 @@ const Activities = () => {
         {
 			title: 'Lagoi Bay',
 			source: './assets/lagoi-bay.jpg'
-		},{
+		},
+        {
 			title: 'Lohan Temple',
 			source: './assets/lohan.jpg'
+		},
+        {
+			title: 'Lohan Temple',
+			source: './assets/1000-buddha (1).jpeg'
+		},
+        {
+			title: 'Lohan Temple',
+			source: './assets/1000-buddha (2).jpeg'
 		},
     ]
     return (
