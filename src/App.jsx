@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { slideContext } from './global/global-states';
+import { imgModalContext, slideContext } from './global/global-states';
 import { FaWhatsapp } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import { SiLine, SiKakaotalk, SiWechat } from 'react-icons/si'
 import Activities from './components/Activities';
 import Carousel from './components/Carousel';
 import Navbar from './components/Navbar';
@@ -9,6 +10,7 @@ import AOS from 'aos';
 
 import './styles/App.scss'
 import 'aos/dist/aos.css';
+import Modal from './components/Modal';
 
 function App() {
 	const carouselItems = [
@@ -31,9 +33,31 @@ function App() {
 		{
 			title: 'BLUE LAKE AND BINTAN DESSERT',
 			source: './assets/blue-lake.jpg'
-		}
+		},
+		{
+			title: 'BINTAN SLEEPING BUDDHA',
+			source: './assets/sleeping-buddha.jpg'
+		},
+		{
+			title: 'TRANS STUDIO GARDEN',
+			source: './assets/trans-studio.jpg'
+		},
+		{
+			title: 'WHITE SAND',
+			source: './assets/white-sand.jpg'
+		},
+		{
+			title: 'TREASURE BAY',
+			source: './assets/treasure-bay.jpg'
+		},
+		{
+			title: 'LAGOI BAY',
+			source: './assets/lagoi-bay.jpg'
+		},
 	]
+
 	const [ currentSlide, setCurrentSlide ] = useState(0)
+	const [ modal, setModal ] = useState(false)
 	const [ name, setName ] = useState('')
 	const [ mobile, setMobile ] = useState('')
 	const [ tujuan, setTujuan ] = useState('')
@@ -48,9 +72,11 @@ function App() {
 		console.log(templateWA)
 		window.open("https://wa.me/+6281277327309?text="+templateWA)
 	}
-	
+
 	return (
 		<slideContext.Provider value={{ currentSlide, setCurrentSlide }}>
+		<imgModalContext.Provider value={{ modal, setModal }}>
+			<Modal></Modal>
 			<div className="navbar">
 				<Navbar></Navbar>
 			</div>
@@ -74,7 +100,7 @@ function App() {
 					</div>
 				</div>
 				<div className="activities" id="activities" >
-					<h2 data-aos="fade-right">Bintan Activities</h2>
+					<h2 data-aos="fade-right">Bintan Activities and Tourist Attaction</h2>
 					<Activities></Activities>
 				</div>
 				<div className="booking" id="book">
@@ -99,7 +125,9 @@ function App() {
 								<div className="contact">
 									<div className="contact-bubble">
 										<FaWhatsapp className='icon'></FaWhatsapp>
-										<h3>Whatsapp</h3>
+										<SiLine className='icon'></SiLine>
+										<SiKakaotalk className='icon'></SiKakaotalk>
+										<SiWechat className='icon'></SiWechat>
 									</div>
 									<p>+62-812-7732-7309</p>
 								</div>
@@ -122,9 +150,10 @@ function App() {
 					</div>
 				</div>
 				<div className='footer'>
-					<p>Travel and Taxi Naga Bintan © 2022</p>
+					<p>Bintan Taxi and Travel © 2022</p>
 				</div>
 			</div>
+		</imgModalContext.Provider>
 		</slideContext.Provider>
 	);
 }

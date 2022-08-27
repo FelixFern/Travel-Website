@@ -9,9 +9,9 @@ const Navbar = () => {
                     <img src="assets/logo.png" alt="" />
                 </div>
                 <h3>
-                    TRAVEL AND TAXI <br/>
+                    Bintan<br/>
                     <span>
-                        NAGA BINTAN
+                        Tour Travel & Taxi
                     </span>
                 </h3>
             </div>

@@ -9,6 +9,10 @@ const Activities = () => {
     
     const activitiesList = [
         {
+            title: "Seafood", 
+            source: "assets/seafood.jpg"
+        },
+        {
             title: "Snorkeling Tour", 
             source: "assets/snorkeling.jpg"
         },
@@ -37,9 +41,32 @@ const Activities = () => {
             source: "assets/fishing.jpg"
         },
         {
-            title: "GUNUNG BINTAN TREKKING", 
+            title: "Gunung Bintan Trekking", 
             source: "assets/gunung-b.jpg"
         },
+        {
+			title: 'Sleeping Buddha',
+			source: './assets/sleeping-buddha.jpg'
+		},
+		{
+			title: 'Trans Studio Garden',
+			source: './assets/trans-studio.jpg'
+		},
+		{
+			title: 'White Sand Island',
+			source: './assets/white-sand.jpg'
+		}, 
+		{
+			title: 'Treasure Bay',
+			source: './assets/treasure-bay.jpg'
+		}, 
+        {
+			title: 'Lagoi Bay',
+			source: './assets/lagoi-bay.jpg'
+		},{
+			title: 'Lohan Temple',
+			source: './assets/lohan.jpg'
+		},
     ]
     return (
         <div className='activities-parent'>
