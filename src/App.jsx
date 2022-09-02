@@ -76,11 +76,12 @@ function App() {
 	return (
 		<slideContext.Provider value={{ currentSlide, setCurrentSlide }}>
 		<imgModalContext.Provider value={{ modal, setModal }}>
+			<h1 className='hidden'>Bintan Tour, Travel, and Taxi</h1>
 			<Modal></Modal>
 			<div className="navbar">
 				<Navbar></Navbar>
 			</div>
-			<div className="content">
+			<main className="content">
 				<div className="landing">
 					<div className="landing-bg">
 						<div className="darken"></div>
@@ -96,6 +97,21 @@ function App() {
 							<Carousel
 								items={carouselItems}
 							></Carousel>
+						</div>
+					</div>
+				</div>
+				<div className='about'>
+					<div className="content">
+						<div className='left'>
+							<img src="./assets/logo.png" alt="" />
+						</div>
+						<div className="right">
+							<h1>About Bintan Tour, Travel, and Taxi</h1>
+							<p>Bintan tour travel and taxi adalah perusahaan bergerak di bidang pariwisata menyediakan jasa taxi dan paket travel
+								Bintan tour travel and taxi sangat membantu traveler untuk traveling di kawasan Bintan karena Bintan tour travel and taxi mengenal semua wilayah kawasan Bintan ,anda bisa meminta rekomendasi apa saja untuk memudahkan anda karena Bintan tour travel and taxi mengenal semua tentang wilayah kawasan Bintan .
+								Telah banyak client kami dari berbagai manca negara seperti Singapore terutama karena dekat dengan kawasan Bintan ,China, Amerika, India, Jerman, Malaysia, yang menggunakan jasa travel and taxi kami.
+								Jika anda ingin traveling di kawasan Bintan dengan harga yang murah dan fasilitas yang nyaman bisa menghubungi kami di bintanttourtravelandtaxi.com
+							</p>
 						</div>
 					</div>
 				</div>
@@ -149,10 +165,10 @@ function App() {
 						</div>
 					</div>
 				</div>
-				<div className='footer'>
+				<footer className='footer'>
 					<p>Bintan Taxi and Travel © 2022</p>
-				</div>
-			</div>
+				</footer>
+			</main>
 		</imgModalContext.Provider>
 		</slideContext.Provider>
 	);

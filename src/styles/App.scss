@@ -32,6 +32,9 @@ a {
     text-decoration: none;
 }
 
+.hidden {
+    display: none;
+}
 
 .navbar {
     width: 75vw;
@@ -104,7 +107,40 @@ a {
             }
         }
     }
+    .about {
+        width: 100vw;
+        padding: 5% 0 5% 0;
+        background-color: $yellow;
+        align-items: center;
 
+        .content {
+            overflow: hidden;
+            align-items: center;
+            display: flex;
+            width: 75vw;
+            column-gap: 30px;
+            margin: auto;
+            .left {
+                width: 200%;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            .right {
+                h1 {
+                    width: 75vw;
+                    font-size: 1rem !important;
+                }
+                p {
+                    width: 75vw;
+                    font-weight: 500;
+                }
+            }
+            }
+            
+        }
+    
+    }
     .activities {
         width: 75vw;
         margin: 0;
@@ -268,6 +304,14 @@ a {
         }
         .right {
             height: fit-content;
+        }
+    }
+    .about {
+        padding: 10% 0 15% 0 !important;
+        .content {
+            .left {
+                display: none;
+            }
         }
     }
     .booking { 
