@@ -84,6 +84,7 @@ function App() {
 				<meta property="og:type" content="website"></meta>
 				<meta property="og:site_name" content="Paket Tour Bintan Terjangkau dan Termurah"></meta>
 				<meta property="og:locale" content="id_ID"></meta>
+				<meta name="google-site-verification" content="ZSIXBajhhfEzZbRal7EatpWGPAIUA100WoB2u5JSU7Y" />
 				<link rel="canonical" href="https://www.bintanttourtravelandtaxi.com/"></link>
 			</Helmet>
 			<slideContext.Provider value={{ currentSlide, setCurrentSlide }}>
