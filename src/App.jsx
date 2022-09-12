@@ -84,8 +84,8 @@ function App() {
 				<meta property="og:type" content="website"></meta>
 				<meta property="og:site_name" content="Bintan Tour Travel and Taxi - Paket Tour Bintan Terjangkau dan Termurah"></meta>
 				<meta property="og:locale" content="id_ID"></meta>
-				<meta name="google-site-verification" content="ZSIXBajhhfEzZbRal7EatpWGPAIUA100WoB2u5JSU7Y" />
 				<link rel="canonical" href="https://www.bintanttourtravelandtaxi.com/"></link>
+				<meta name="google-site-verification" content="ZSIXBajhhfEzZbRal7EatpWGPAIUA100WoB2u5JSU7Y" />
 			</Helmet>
 			<slideContext.Provider value={{ currentSlide, setCurrentSlide }}>
 			<imgModalContext.Provider value={{ modal, setModal }}>
