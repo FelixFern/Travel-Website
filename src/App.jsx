@@ -77,12 +77,12 @@ function App() {
 	return (
 		<>
 			<Helmet>
-				<title>Bintan Tour, Travel, and Taxi - Bintan, Kepulauan Riau</title>
-				<meta name="description" content="Bintan Tour, Travel and Taxi menyediakan Jasa tour, travel, dan taxi di Bintan, Kepulauan Riau dengan harga yang terjangkau"></meta>
+				<title>Bintan Tour Travel and Taxi - Bintan, Kepulauan Riau</title>
+				<meta name="description" content="Bintan Tour Travel and Taxi menyediakan Jasa tour, travel, dan taxi di Bintan, Kepulauan Riau dengan harga yang terjangkau"></meta>
 				<meta name="keyword" content='bintan, tour, travel, jasa travel, taxi, murah, kepulauan riau, batam, jalan-jalan, wisata, lagoi, terjangkau, bintan taxi'></meta>
 				<meta property="og:url" content="https://www.bintanttourtravelandtaxi.com/"></meta>
 				<meta property="og:type" content="website"></meta>
-				<meta property="og:site_name" content="Paket Tour Bintan Terjangkau dan Termurah"></meta>
+				<meta property="og:site_name" content="Bintan Tour Travel and Taxi - Paket Tour Bintan Terjangkau dan Termurah"></meta>
 				<meta property="og:locale" content="id_ID"></meta>
 				<meta name="google-site-verification" content="ZSIXBajhhfEzZbRal7EatpWGPAIUA100WoB2u5JSU7Y" />
 				<link rel="canonical" href="https://www.bintanttourtravelandtaxi.com/"></link>
