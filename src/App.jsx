@@ -79,7 +79,7 @@ function App() {
 			<Helmet>
 				<title>Bintan Tour Travel and Taxi - Bintan, Kepulauan Riau</title>
 				<meta name="description" content="Bintan Tour Travel and Taxi menyediakan Jasa tour, travel, dan taxi di Bintan, Kepulauan Riau dengan harga yang terjangkau"></meta>
-				<meta name="keyword" content='bintan, tour, travel, jasa travel, taxi, murah, kepulauan riau, batam, jalan-jalan, wisata, lagoi, terjangkau, bintan taxi'></meta>
+				<meta name="keyword" content='bintan, tour, travel, jasa travel, taxi, murah, kepulauan riau, batam, jalan-jalan, wisata, lagoi, terjangkau, bintan taxi, tour bintan, kawasan bintan, lohan temple, bintan lohan, booking, book now, bintan sleeping buddha, sleeping buddha, gunung bintan, lohan,temple, bintan lohan, seafood, lagoi, bintan kepulauan, travelling, bintan snorkeling'></meta>
 				<meta property="og:url" content="https://www.bintanttourtravelandtaxi.com/"></meta>
 				<meta property="og:type" content="website"></meta>
 				<meta property="og:site_name" content="Bintan Tour Travel and Taxi - Paket Tour Bintan Terjangkau dan Termurah"></meta>
